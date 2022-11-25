@@ -425,11 +425,11 @@ Install_WireGuardTools() {
 Install_WireGuardGo() {
     case ${SysInfo_Virt} in
     openvz | lxc*)
-        curl -fsSL https://raw.githubusercontent.com/P3TERX/script/master/wireguard-go.sh | bash
+        curl -fsSL https://raw.githubusercontent.com/Lison-Li/script/master/wireguard-go.sh | bash
         ;;
     *)
         if [[ ${SysInfo_Kernel_Ver_major} -lt 5 || ${SysInfo_Kernel_Ver_minor} -lt 6 ]]; then
-            curl -fsSL https://raw.githubusercontent.com/P3TERX/script/master/wireguard-go.sh | bash
+            curl -fsSL https://raw.githubusercontent.com/Lison-Li/script/master/wireguard-go.sh | bash
         fi
         ;;
     esac
